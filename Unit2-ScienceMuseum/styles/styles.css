@@ -560,7 +560,7 @@ footer p {
 
   .right {
     float: right;
-    margin: 4px;
+    margin: 0px 0px 5px 5px;
     width: 50%;
   }
   .right img {
@@ -636,7 +636,6 @@ footer p {
 
   .right {
     float: right;
-    margin: 4px;
     width: 400px;
   }
   .right img {
