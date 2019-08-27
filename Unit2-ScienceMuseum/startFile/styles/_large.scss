@@ -1,0 +1,46 @@
+header {
+    width: 75rem;
+    height: 200px;
+    h1 {
+        margin-left: 2rem;
+    }
+    img {
+        width: 80px;
+        height: auto;
+    }
+}
+nav {
+    width: 75rem;
+    height: 60px;
+    a {
+        width: 150px;
+    }
+}
+hr {
+    height: 60px;
+}
+.main {
+    width: 75rem;
+    align-items: flex-start;
+}
+.content-wrap {
+    h2 {
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+    p {
+        width: 75rem;
+        padding: 0px 10px 10px 0px;
+        float: none;
+        img {
+            width: 400px;
+            height: auto;
+            padding: 0px 0px 10px 10px;
+            float: right;
+        }
+    }
+}
+
+footer {
+    width: 75rem;
+}

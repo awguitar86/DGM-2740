@@ -1,0 +1,42 @@
+@media only screen and (min-width: 75rem) {
+    header {
+        width: 75rem;
+        height: 80px;
+    }
+    header h1 {
+        margin-left: 2rem;
+    }
+    nav {
+        width: 75rem;
+        height: 60px;
+    }
+    nav a {
+        width: 150px;
+    }
+    hr {
+        height: 60px;
+    }
+    .main {
+        width: 75rem;
+        align-items: flex-start;
+    }
+    .main h2 {
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+    .laptop {
+        display: initial;
+        width: 800px;
+        height: auto;
+        margin-left: 40px;
+    }
+    .phone {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    footer {
+        width: 75rem;
+    }
+}
