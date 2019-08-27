@@ -1,3 +1,5 @@
+@import './variables';
+
 header {
     height: 150px;
     justify-content: flex-start;
@@ -46,14 +48,16 @@ hr {
         margin-left: 20px;
     }
 }
+.content {
+    width: 100%;
+}
 .left {
-    margin: 4px;
+    margin: 4px 4px 4px 20px;
     font-size: 14pt;
-    margin-left: 20px;
 }
 .right {
     float: right;
-    margin: 0px 0px 5px 5px;
+    margin: 0px 20px 5px 5px;
     width: 50%;
     img {
         width: 100%;

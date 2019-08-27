@@ -1,3 +1,5 @@
+@import './variables';
+
 /* Prevent adjustments of font size when orientation changes  */
 html {
     -webkit-text-size-adjust: 100%;
@@ -21,7 +23,7 @@ html, body {
 header {
     width: 100vw;
     height: 100px;
-    background: #4C5F8D;
+    background: $primary;
     display: flex;
     align-items: flex-end;
     img {
@@ -41,7 +43,7 @@ header {
             color: white;
             margin: 0;
             font-size: 20pt;
-            font-family: 'Exo 2', sans-serif;
+            font-family: $font;
         }
     }
 }
@@ -49,12 +51,12 @@ header {
     display: none;
 }
 .active {
-    background: #61605F;
+    background: $active;
 }
 nav {
     width: 100vw;
     height: 40px;
-    background: #3E3D3C;
+    background: $secondary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +75,7 @@ nav {
             color: white;
             text-decoration: none;
             font-size: 12pt;
-            font-family: 'Exo 2', sans-serif;
+            font-family: $font;
         }
     }
 }
@@ -107,8 +109,8 @@ hr {
     h2 {
         margin: 0;
         margin-bottom: 10px;
-        margin-left: 10px;
-        font-family: 'Exo 2', sans-serif;
+        margin-left: 20px;
+        font-family: $font;
     }
 }
 .right {
@@ -123,19 +125,20 @@ hr {
 .left {
     width: 95vw;
     margin: 15px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
+    font-size: 1.2rem;
 }
 footer {
     width: 100vw;
     height: 60px;
-    background: #4C5F8D;
+    background: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     p {
         color: white;
-        font-family: 'Exo 2', sans-serif;
+        font-family: $font;
     }
 }
 
