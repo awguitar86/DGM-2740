@@ -467,7 +467,7 @@ hr {
 }
 .right img {
   width: 95vw;
-  height: auto;
+  height: 100%;
 }
 
 .left {
@@ -570,7 +570,6 @@ footer p {
   }
   .right img {
     width: 100%;
-    height: auto;
   }
 }
 /* end of media query */
@@ -647,7 +646,6 @@ footer p {
   }
   .right img {
     width: 400px;
-    height: auto;
   }
 }
 /* end of media query */
