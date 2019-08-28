@@ -370,11 +370,10 @@ nav {
   align-items: center;
   margin-bottom: 20px; }
   .main h2 {
-    width: 100vw;
+    width: 95vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 10px;
     font-family: "Livvic", sans-serif; }
 
 .images {
@@ -423,6 +422,9 @@ footer {
       width: 12%; }
     nav hr {
       height: 70%; }
+
+  .main h2 {
+    padding-left: 5px; }
 
   .images {
     grid-template-columns: repeat(3, 1fr);
