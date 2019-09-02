@@ -361,7 +361,8 @@ nav {
     padding: 0;
     margin: 0; }
   nav .active {
-    background: #f0c808; }
+    background: #167b20;
+    color: #61e36e; }
 
 .main {
   width: 100vw;
