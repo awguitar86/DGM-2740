@@ -29,7 +29,7 @@ header {
     justify-content: center;
     padding: 30px 0px 10px 0px;
     div {
-        height: 90%;
+        width: 95vw;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -78,25 +78,30 @@ main {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 30px;
-    h2 {
+    margin-top: 20px;
+    h1 {
         width: 95vw;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         font-family: $font;
+        margin:0 ;
     }
 }
 
 .members {
     width: 95vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
 }
 .mbr {
+    margin-top: 20px;
     h3 {
         font-family: $font;
+        margin: 0;
+        margin-bottom: 5px;
     }
     div {
         width: 100%;
@@ -106,6 +111,18 @@ main {
             clip-path: circle(50%);
             shape-outside: circle(50%);
         }
+        p {
+            font-family: $font;
+            margin: 0;
+        }
+    }
+}
+.images {
+    width: 100%;
+    margin-top: 30px;
+    img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
