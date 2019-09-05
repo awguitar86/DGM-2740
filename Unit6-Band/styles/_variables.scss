@@ -1,9 +1,11 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap');
 
-$font: '';
+$font: 'Play', sans-serif;
 
-$prime: '';
+$prime: #002d56;
 
-$second: '';
+$second: #267aab;
 
-$third:'';
+$third: #83bf4f;
+
+$darken: darken($second, 12%);
