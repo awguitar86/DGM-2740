@@ -376,7 +376,7 @@ header {
   align-items: flex-start;
 }
 .header-body h1 {
-  font-size: 16pt;
+  font-size: 18pt;
   font-family: "Lato", sans-serif;
   color: white;
   margin: 10px 0px 5px 0px;
@@ -410,16 +410,27 @@ nav {
 }
 .nav-sm div {
   width: 95%;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-sm div button {
+.nav-sm div #menu {
   border: none;
   background: none;
   font-size: 16pt;
   font-weight: bold;
+  color: white;
+}
+.nav-sm div #x {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 16pt;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: white;
+  transition: ease-in-out 0.2s;
 }
 .nav-sm div input {
   width: 40%;
@@ -430,9 +441,9 @@ nav {
   border-radius: 4px;
   border: none;
 }
-.nav-sm ul {
+.nav-sm #dd-menu {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -440,16 +451,17 @@ nav {
   margin: 0;
   padding: 0;
   border-top: solid 2px black;
+  transition: ease-in-out 0.2s;
 }
-.nav-sm ul li {
+.nav-sm #dd-menu li {
   width: 100%;
-  height: 40px;
+  height: 50px;
   border-bottom: solid 2px black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-sm ul li a {
+.nav-sm #dd-menu li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -458,10 +470,180 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: ease-in-out 0.2s;
 }
-.nav-sm ul li a:hover {
+
+.active {
   background: #76241a;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lawyers {
+  width: 95%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: 20px 0px 20px 0px;
+}
+.lawyers div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px black;
+}
+.lawyers div h3 {
+  font-family: "Lato", sans-serif;
+}
+.lawyers div img {
+  width: 100%;
+  height: 100%;
+}
+.lawyers div button {
+  width: 70%;
+  height: 40px;
+  margin: 10px 0px 10px 0px;
+  border: none;
+  background: #346094;
+  font-family: "Lato", sans-serif;
+  font-size: 11pt;
+  border-radius: 4px;
+  color: white;
+}
+
+.cta {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+.cta button {
+  width: 83.3%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #d18a00;
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blogs {
+  width: 100vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+}
+.blogs div {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+}
+.blogs div img {
+  width: 100%;
+  height: 100%;
+}
+.blogs div h3 {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Lato", sans-serif;
+}
+.blogs div p {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Lato", sans-serif;
+}
+.blogs div button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #346094;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.tip-faq {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.tip {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a03123;
+  border-radius: 5px;
+}
+.tip h2, .tip p, .tip a {
+  font-family: "Lato", sans-serif;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+.tip a {
+  margin-bottom: 10px;
+}
+
+.faq {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a03123;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.faq h2, .faq p, .faq a {
+  font-family: "Lato", sans-serif;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+.faq a {
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 32pt;
+  color: #346094;
+  margin: 20px 0px 20px 0px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
