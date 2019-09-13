@@ -375,13 +375,13 @@ header {
   justify-content: flex-end;
   align-items: flex-start;
 }
-.header-body h1 {
+.header-body div h1 {
   font-size: 18pt;
   font-family: "Lato", sans-serif;
   color: white;
   margin: 10px 0px 5px 0px;
 }
-.header-body p {
+.header-body div p {
   font-size: 13pt;
   font-family: "Lato", sans-serif;
   color: white;
@@ -498,14 +498,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: solid 1px black;
+  box-shadow: 0px 0px 5px 2px #888888;
+  border-radius: 5px;
 }
 .lawyers div h3 {
   font-family: "Lato", sans-serif;
 }
 .lawyers div img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .lawyers div button {
   width: 70%;
@@ -517,6 +518,11 @@ main {
   font-size: 11pt;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.lawyers div button:hover {
+  background: #27486e;
 }
 
 .cta {
@@ -537,6 +543,11 @@ main {
   color: white;
   font-weight: 700;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.cta button:hover {
+  background: #9e6800;
 }
 
 .blogs {
@@ -552,11 +563,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 1px black;
+  box-shadow: 0px 0px 5px 2px #888888;
+  border-radius: 5px;
 }
 .blogs div img {
   width: 100%;
   height: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
 .blogs div h3 {
   width: 95%;
@@ -571,14 +584,21 @@ main {
   align-items: center;
   justify-content: flex-start;
   font-family: "Lato", sans-serif;
+  margin: 0px 0px 10px 0px;
 }
 .blogs div button {
   width: 100%;
-  height: 60px;
+  height: 75px;
   border: none;
+  border-radius: 0px 0px 5px 5px;
   background: #346094;
   color: white;
   font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.blogs div button:hover {
+  background: #27486e;
 }
 
 .tip-faq {
@@ -595,6 +615,7 @@ main {
   flex-direction: column;
   align-items: center;
   background: #a03123;
+  box-shadow: 0px 0px 5px 2px #888888;
   border-radius: 5px;
 }
 .tip h2, .tip p, .tip a {
@@ -604,19 +625,33 @@ main {
   align-items: center;
   justify-content: flex-start;
   color: white;
+  margin: 8px 0px 8px 0px;
 }
 .tip a {
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.tip a:hover {
+  color: #220b08;
+}
+
+.faq-wrap {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #a03123;
   border-radius: 5px;
   margin-top: 20px;
+  box-shadow: 0px 0px 5px 2px #888888;
 }
 .faq h2, .faq p, .faq a {
   font-family: "Lato", sans-serif;
@@ -625,9 +660,15 @@ main {
   align-items: center;
   justify-content: flex-start;
   color: white;
+  margin: 8px 0px 8px 0px;
 }
 .faq a {
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.faq a:hover {
+  color: #220b08;
 }
 
 footer {
@@ -655,6 +696,90 @@ footer p {
 
 @media only screen and (min-width: 48rem) {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+  .header-body {
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-body div h1 {
+    font-size: 24pt;
+  }
+  .header-body div p {
+    font-size: 15pt;
+  }
+  .header-body input {
+    display: initial;
+    margin-bottom: 15px;
+    width: 30%;
+    height: 25px;
+    padding: 5px;
+    background: white;
+    font-family: "Lato", sans-serif;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .nav-md-lg {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: #a03123;
+  }
+  .nav-md-lg a {
+    width: 10%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-sm {
+    display: none;
+  }
+
+  .lawyers {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+  }
+
+  .cta {
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+  }
+  .cta button {
+    width: 31.3%;
+  }
+
+  .blogs {
+    width: 95vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .blogs div {
+    width: 100%;
+  }
+
+  .faq-wrap {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq {
+    width: 31.3%;
+  }
 }
 /* end of media query */
 @media only screen and (min-width: 75rem) {
