@@ -1,1 +1,16 @@
 @import './variables';
+
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .large-#{$i}{flex-basis: $w;}
+}
+
+
+.cta {
+    width: 75rem;
+    justify-content: center;
+    .large-4 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
