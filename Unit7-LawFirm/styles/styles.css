@@ -1084,6 +1084,9 @@ footer p {
     height: 100%;
     margin-top: 0;
   }
+  .faq h2, .faq p, .faq a {
+    width: 90%;
+  }
 
   footer {
     width: 75rem;

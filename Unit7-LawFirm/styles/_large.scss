@@ -48,6 +48,9 @@ main {
 .faq {
     height: 100%;
     margin-top: 0;
+    h2, p, a {
+        width: 90%;
+    }
 }
 
 footer {
