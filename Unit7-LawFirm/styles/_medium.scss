@@ -2,6 +2,10 @@
 
 @for $i from 1 through 12 {
   $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
   .medium-#{$i}{flex-basis: $w;}
 }
 
@@ -54,11 +58,6 @@
     display: none;
 }
 
-.lawyers {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
-}
-
 .cta {
   width: 95vw;
   flex-direction: row;
@@ -68,21 +67,9 @@
 }
 
 .blogs {
-    width: 95vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    div {
-        width: 100%;
-    }
+    justify-content: space-between;
 }
 
-.faq-wrap {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.tip-faq {
   justify-content: space-between;
-}
-.faq {
-    width: 31.3%;
 }

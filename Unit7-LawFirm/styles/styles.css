@@ -337,52 +337,100 @@ template {
   display: none;
 }
 
-.small-1 {
+.Msmall-1 {
   flex-basis: 6.3333333333%;
 }
 
-.small-2 {
+.Msmall-2 {
   flex-basis: 14.6666666667%;
 }
 
-.small-3 {
+.Msmall-3 {
   flex-basis: 23%;
 }
 
-.small-4 {
+.Msmall-4 {
   flex-basis: 31.3333333333%;
 }
 
-.small-5 {
+.Msmall-5 {
   flex-basis: 39.6666666667%;
 }
 
-.small-6 {
+.Msmall-6 {
   flex-basis: 48%;
 }
 
-.small-7 {
+.Msmall-7 {
   flex-basis: 56.3333333333%;
 }
 
-.small-8 {
+.Msmall-8 {
   flex-basis: 64.6666666667%;
 }
 
-.small-9 {
+.Msmall-9 {
   flex-basis: 73%;
 }
 
-.small-10 {
+.Msmall-10 {
   flex-basis: 81.3333333333%;
 }
 
-.small-11 {
+.Msmall-11 {
   flex-basis: 89.6666666667%;
 }
 
-.small-12 {
+.Msmall-12 {
   flex-basis: 98%;
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
 }
 
 /* Prevent adjustments of font size when orientation changes  */
@@ -533,11 +581,12 @@ main {
 }
 
 .lawyers {
-  width: 95%;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  margin: 20px 0px 20px 0px;
+  margin: 30px 0px 0px 0px;
 }
 .lawyers div {
   width: 100%;
@@ -545,7 +594,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 0px 5px 2px #888888;
+  box-shadow: 0px 0px 3px 2px #888888;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -579,7 +628,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 20px 0px 20px 0px;
+  margin: 30px 0px 30px 0px;
 }
 .cta button {
   height: 60px;
@@ -599,20 +648,19 @@ main {
 }
 
 .blogs {
-  width: 100vw;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, auto);
-  justify-items: center;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .blogs div {
-  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 5px 2px #888888;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .blogs div img {
   width: 100%;
@@ -636,7 +684,7 @@ main {
 }
 .blogs div button {
   width: 100%;
-  height: 75px;
+  height: 50px;
   border: none;
   border-radius: 0px 0px 5px 5px;
   background: #346094;
@@ -650,15 +698,15 @@ main {
 }
 
 .tip-faq {
-  width: 100vw;
+  width: 95vw;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin: 20px 0px 20px 0px;
 }
 
 .tip {
-  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -684,15 +732,7 @@ main {
   color: #220b08;
 }
 
-.faq-wrap {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .faq {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -744,52 +784,100 @@ footer p {
 
 @media only screen and (min-width: 48rem) {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-  .medium-1 {
+  .Mmedium-1 {
     flex-basis: 6.3333333333%;
   }
 
-  .medium-2 {
+  .Mmedium-2 {
     flex-basis: 14.6666666667%;
   }
 
-  .medium-3 {
+  .Mmedium-3 {
     flex-basis: 23%;
   }
 
-  .medium-4 {
+  .Mmedium-4 {
     flex-basis: 31.3333333333%;
   }
 
-  .medium-5 {
+  .Mmedium-5 {
     flex-basis: 39.6666666667%;
   }
 
-  .medium-6 {
+  .Mmedium-6 {
     flex-basis: 48%;
   }
 
-  .medium-7 {
+  .Mmedium-7 {
     flex-basis: 56.3333333333%;
   }
 
-  .medium-8 {
+  .Mmedium-8 {
     flex-basis: 64.6666666667%;
   }
 
-  .medium-9 {
+  .Mmedium-9 {
     flex-basis: 73%;
   }
 
-  .medium-10 {
+  .Mmedium-10 {
     flex-basis: 81.3333333333%;
   }
 
-  .medium-11 {
+  .Mmedium-11 {
     flex-basis: 89.6666666667%;
   }
 
-  .medium-12 {
+  .Mmedium-12 {
     flex-basis: 98%;
+  }
+
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .medium-3 {
+    flex-basis: 25%;
+  }
+
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .medium-6 {
+    flex-basis: 50%;
+  }
+
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .medium-9 {
+    flex-basis: 75%;
+  }
+
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .medium-12 {
+    flex-basis: 100%;
   }
 
   .header-body {
@@ -840,11 +928,6 @@ footer p {
     display: none;
   }
 
-  .lawyers {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
-  }
-
   .cta {
     width: 95vw;
     flex-direction: row;
@@ -854,75 +937,130 @@ footer p {
   }
 
   .blogs {
-    width: 95vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-  .blogs div {
-    width: 100%;
-  }
-
-  .faq-wrap {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 
-  .faq {
-    width: 31.3%;
+  .tip-faq {
+    justify-content: space-between;
   }
 }
 /* end of media query */
 @media only screen and (min-width: 75rem) {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-  .large-1 {
+  .Mlarge-1 {
     flex-basis: 6.3333333333%;
   }
 
-  .large-2 {
+  .Mlarge-2 {
     flex-basis: 14.6666666667%;
   }
 
-  .large-3 {
+  .Mlarge-3 {
     flex-basis: 23%;
   }
 
-  .large-4 {
+  .Mlarge-4 {
     flex-basis: 31.3333333333%;
   }
 
-  .large-5 {
+  .Mlarge-5 {
     flex-basis: 39.6666666667%;
   }
 
-  .large-6 {
+  .Mlarge-6 {
     flex-basis: 48%;
   }
 
-  .large-7 {
+  .Mlarge-7 {
     flex-basis: 56.3333333333%;
   }
 
-  .large-8 {
+  .Mlarge-8 {
     flex-basis: 64.6666666667%;
   }
 
-  .large-9 {
+  .Mlarge-9 {
     flex-basis: 73%;
   }
 
-  .large-10 {
+  .Mlarge-10 {
     flex-basis: 81.3333333333%;
   }
 
-  .large-11 {
+  .Mlarge-11 {
     flex-basis: 89.6666666667%;
   }
 
-  .large-12 {
+  .Mlarge-12 {
     flex-basis: 98%;
+  }
+
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .large-3 {
+    flex-basis: 25%;
+  }
+
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .large-6 {
+    flex-basis: 50%;
+  }
+
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .large-9 {
+    flex-basis: 75%;
+  }
+
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .large-12 {
+    flex-basis: 100%;
+  }
+
+  .header-body {
+    width: 75rem;
+  }
+
+  nav {
+    width: 75rem;
+  }
+
+  main {
+    width: 75rem;
+  }
+
+  .lawyers {
+    width: 75rem;
+    justify-content: center;
+  }
+  .lawyers div {
+    margin: 0px 10px 0px 10px;
   }
 
   .cta {
@@ -932,6 +1070,26 @@ footer p {
   .cta .large-4 {
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .blogs {
+    width: 75rem;
+  }
+
+  .tip-faq {
+    width: 75rem;
+  }
+
+  .faq {
+    height: 100%;
+    margin-top: 0;
+  }
+
+  footer {
+    width: 75rem;
+  }
+  footer p {
+    width: 20%;
   }
 }
 /* end of media query */
