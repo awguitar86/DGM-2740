@@ -1,1 +1,24 @@
 @import './variables';
+
+.nav-md-lg {
+    a {
+        width: 10%;
+    }
+}
+
+main {
+    width: 80rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "one one one two"
+        "one one one three"
+        "four five six seven";
+}
+
+.footer-nav {
+    width: 80%;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: space-between; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
