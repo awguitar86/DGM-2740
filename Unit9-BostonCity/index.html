@@ -4,10 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>National Park</title>
+    <title>Boston city</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Boston City</h1>
+        <h3>Where History Comes Alive</h3>
+    </header>
+
+    <nav>
+        <div class="nav-md-lg">
+            <a href="#" class="active">Visit</a>
+            <a href="#">Departments</a>
+            <a href="#">Services</a>
+            <a href="#">Pay Bills</a>
+            <a href="#">Meetings</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="nav-sm">
+            <div>
+                <button id="menu" onclick="showMenu()">&#9776;</button>
+                <button id="x" onclick="hideMenu()">X</button>
+            </div>
+            <ul id="dd-menu">
+                <li><a href="#" class="active">Visit</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pay Bills</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="content">
+            <h2>Plan Your Visit</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-solid-color">
+                        <p><i class="fas fa-bed"></i></p>
+                        <h3>PLACES TO STAY</h3>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="card">
+                    <div class="card-solid-color">
+                        <p><i class="fas fa-walking"></i></p>
+                        <h3>FREEDOM TRAIL WALK</h3>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="card">
+                    <div class="card-solid-color">
+                        <p><i class="fas fa-passport"></i></p>
+                        <h3>PASS TO THE CITY</h3>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="card">
+                    <div class="card-solid-color">
+                        <p><i class="fas fa-utensils"></i></p>
+                        <h3>FINE DINNG</h3>
+                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2019 • Austin Wright • Login</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){ $('.hero').slick(); });
+
+      const hamburger = document.getElementById("menu");
+        const x = document.getElementById('x');
+        const ddMenu = document.getElementById('dd-menu');
+        function showMenu() {
+            menu.style.display = "none";
+            x.style.display = "initial";
+            ddMenu.style.display = "flex";
+        }
+        function hideMenu() {
+            menu.style.display = "initial";
+            x.style.display = "none";
+            ddMenu.style.display = "none";
+        }
+    </script>
 </body>
 </html>
