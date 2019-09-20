@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boston city</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
 </head>
 <body>
@@ -43,42 +42,41 @@
 
     <main>
         <div class="hero">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div><h3>Boston City Skyline</h3><img src="./images/hero1.jpg" alt="Boston City" class="hero1"></div>
+            <div><h3>Boston City Night</h3><img src="./images/hero2.jpg" alt="Boston City" class="hero2"></div>
+            <div><h3>Boston City Shore</h3><img src="./images/hero3.jpg" alt="Boston City" class="hero3"></div>
+            <div><h3>Boston City Lights</h3><img src="./images/hero4.jpg" alt="Boston City" class="hero4"></div>
         </div>
         <div class="content">
-            <h2>Plan Your Visit</h2>
+            <h1>Plan Your Visit</h1>
             <div class="cards">
                 <div class="card">
                     <div class="card-solid-color">
                         <p><i class="fas fa-bed"></i></p>
                         <h3>PLACES TO STAY</h3>
                     </div>
-                    <img src="" alt="">
+                    <img src="./images/places.jpg" alt="Boston City">
                 </div>
                 <div class="card">
                     <div class="card-solid-color">
                         <p><i class="fas fa-walking"></i></p>
                         <h3>FREEDOM TRAIL WALK</h3>
                     </div>
-                    <img src="" alt="">
+                    <img src="./images/freedom.jpg" alt="freedom trail">
                 </div>
                 <div class="card">
                     <div class="card-solid-color">
                         <p><i class="fas fa-passport"></i></p>
                         <h3>PASS TO THE CITY</h3>
                     </div>
-                    <img src="" alt="">
+                    <img src="./images/pass.jpg" alt="Boston City">
                 </div>
                 <div class="card">
                     <div class="card-solid-color">
                         <p><i class="fas fa-utensils"></i></p>
-                        <h3>FINE DINNG</h3>
+                        <h3>FINE DINING</h3>
                     </div>
-                    <img src="" alt="">
+                    <img src="./images/food.jpg" alt="Plate of Salmon">
                 </div>
             </div>
         </div>
@@ -88,12 +86,13 @@
         <p>© 2019 • Austin Wright • Login</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./slick/slick/slick.min.js"></script>
     <script type="text/javascript">
-      $(document).ready(function(){ $('.hero').slick(); });
-
-      const hamburger = document.getElementById("menu");
+        $('.hero').slick({
+            arrows: false
+        });
+        const hamburger = document.getElementById("menu");
         const x = document.getElementById('x');
         const ddMenu = document.getElementById('dd-menu');
         function showMenu() {
