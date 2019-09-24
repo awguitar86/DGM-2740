@@ -9,18 +9,32 @@
 </head>
 <body>
     <header>
-        <img src="./EmberLogo.svg" alt="Ember logo">
-        <h1>Ember Clothing</h1>
+        <a href="./index.html">
+            <img src="./EmberLogo.svg" alt="Ember logo">
+            <h1>Ember Clothing</h1>
+        </a>
     </header>
 
     <nav>
         <div class="nav-md-lg">
             <a href="#">Home</a>
-            <a href="#">Products</a>
+            <a href="#" onmousemove="subNavMenu()" onmouseout="subNavMenuOff()">Products &#9660;</a>
             <a href="#">Deals</a>
             <a href="#" class="active">Order</a>
             <a href="#">Reviews</a>
             <a href="#">Contact</a>
+        </div>
+        <div id="sub-nav">
+            <div></div>
+            <div id="sub-menu">
+                <a href="#">&bull; Shirts</a>
+                <a href="#">&bull; Jackets</a>
+                <a href="#">&bull; Hats</a>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <div class="nav-sm">
             <div>
@@ -48,9 +62,9 @@
         <form action="./thanks.html" >
             <h3>Customer Information</h3>
             <div class="info">
-                <label for="name">Full Name</label>
+                <label for="name">Full Name <span>*</span></label>
                 <input type="text" name="name" required>
-                <label for="phone">Phone</label>
+                <label for="phone">Phone <span>*</span></label>
                 <input type="tel" name="phone" required>
                 <label for="email">Email</label>
                 <input type="email" name="email">
@@ -80,11 +94,11 @@
             </div>
             <h3>Payment Information</h3>
             <div class="payment">
-                <label for="cardName">Name on Card</label>
+                <label for="cardName">Name on Card <span>*</span></label>
                 <input type="text" name="cardName" required>
-                <label for="cardNum">Card Number</label>
+                <label for="cardNum">Card Number <span>*</span></label>
                 <input type="number" name="cardNum" required>
-                <label for="exDate">Expiration Date</label>
+                <label for="exDate">Expiration Date <span>*</span></label>
                 <input type="date" name="exDate" required>
             </div>
             <input type="submit" value="Submit" id="submit">
@@ -100,6 +114,7 @@
         const x = document.getElementById('x');
         const ddMenu = document.getElementById('dd-menu');
         const ddSubMenu = document.getElementById('dd-sub-menu');
+        const subNav = document.getElementById('sub-nav');
         function showMenu() {
             menu.style.display = "none";
             x.style.display = "initial";
@@ -116,6 +131,12 @@
             'flex'
             :
             'none';
+        }
+        function subNavMenu() {
+            subNav.style.display = 'flex';
+        }
+        function subNavMenuOff() {
+            subNav.style.display = 'none';
         }
     </script>
 </body>
