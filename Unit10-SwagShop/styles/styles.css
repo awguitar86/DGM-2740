@@ -689,6 +689,10 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+  .nav-md-lg a:hover {
+    background: linear-gradient(0deg, #d62f00 20%, #f6b547 100%);
   }
 
   .nav-sm {
@@ -696,7 +700,7 @@ footer p {
   }
 
   .active {
-    background: #701900;
+    background: linear-gradient(0deg, #d62f00 20%, #f6b547 100%);
   }
 
   #sub-nav {
@@ -722,7 +726,12 @@ footer p {
     border-bottom: solid 1px white;
     color: white;
     text-decoration: none;
-    padding: 5px 0px 5px 0px;
+    padding: 7px 0px 7px 0px;
+    font-family: "Orbitron", sans-serif;
+    transition: ease-in-out 0.2s;
+  }
+  #sub-menu a:hover {
+    background: #bd2a00;
   }
 
   main {

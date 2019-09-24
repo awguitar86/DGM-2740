@@ -23,13 +23,17 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background: linear-gradient(0deg, lighten($prime, 10%) 20%, lighten($second, 10%) 100%);
+        }
     }
 }
 .nav-sm {
     display: none;
 }
 .active {
-    background: darken($prime, 10%);
+    background: linear-gradient(0deg, lighten($prime, 10%) 20%, lighten($second, 10%) 100%);
 }
 #sub-nav {
     width: 100%;
@@ -52,7 +56,12 @@ nav {
         border-bottom: solid 1px white;
         color: white;
         text-decoration: none;
-        padding: 5px 0px 5px 0px;
+        padding: 7px 0px 7px 0px;
+        font-family: $font;
+        transition: ease-in-out 0.2s;
+        &:hover {
+            background: lighten($prime, 5%);
+        }
     }
 }
 
