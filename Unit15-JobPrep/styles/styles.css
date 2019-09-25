@@ -364,6 +364,9 @@ header {
   padding-top: 20px;
   border-bottom: solid 1px #a8a8b2;
 }
+header img {
+  margin-left: 10px;
+}
 
 nav {
   width: 100vw;
