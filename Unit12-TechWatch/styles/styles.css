@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -359,191 +359,106 @@ html, body {
   margin: 0;
 }
 
-header {
-  width: 100vw;
+.nav-sm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-sm div {
+  width: 100%;
   height: 50px;
-  background: #145c9e;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  background: #29abe2;
 }
-header h2 {
-  font-family: "Tenor Sans", sans-serif;
+.nav-sm div #menu {
+  border: none;
+  background: none;
+  font-size: 16pt;
+  font-weight: bold;
   color: white;
   margin-left: 10px;
 }
-
-main {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.locations-header {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  background: #cbb9a8;
-}
-.locations-header h2 {
-  font-family: "Tenor Sans", sans-serif;
-  color: #145c9e;
+.nav-sm div #x {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 16pt;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
   margin-left: 10px;
+  transition: ease-in-out 0.2s;
 }
-
-section {
+.nav-sm #dd-menu {
   width: 100%;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, auto);
-}
-
-.location {
-  width: 100%;
-  background: #145c9e;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: solid 1px white;
+  transition: ease-in-out 0.2s;
+  background: #29abe2;
 }
-
-.grand-hotel {
-  width: 90%;
-  height: 200px;
-  margin-top: 20px;
-  background: url("../images/grandHotel.jpg") no-repeat;
-  background-position: center;
+.nav-sm #dd-menu .dd-item {
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px white;
   display: flex;
-  align-items: flex-end;
-  border-radius: 5px;
-}
-.grand-hotel h3 {
-  font-family: "Tenor Sans", sans-serif;
-  color: white;
-  margin: 0px 0px 10px 10px;
-  text-shadow: 0px 0px 10px black;
-}
-
-.miami {
-  width: 90%;
-  height: 200px;
-  margin-top: 20px;
-  background: url("../images/resort.jpg") no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 5px;
-}
-.miami h3 {
-  font-family: "Tenor Sans", sans-serif;
-  color: white;
-  margin: 0px 0px 10px 10px;
-  text-shadow: 0px 0px 10px black;
-}
-
-.singapore {
-  width: 90%;
-  height: 200px;
-  margin-top: 20px;
-  background: url("../images/singapore.jpg") no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 5px;
-}
-.singapore h3 {
-  font-family: "Tenor Sans", sans-serif;
-  color: white;
-  margin: 0px 0px 10px 10px;
-  text-shadow: 0px 0px 10px black;
-}
-
-.hawaii {
-  width: 90%;
-  height: 200px;
-  margin-top: 20px;
-  background: url("../images/tropical.jpg") no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 5px;
-}
-.hawaii h3 {
-  font-family: "Tenor Sans", sans-serif;
-  color: white;
-  margin: 0px 0px 10px 10px;
-  text-shadow: 0px 0px 10px black;
-}
-
-.info-wrap {
-  width: 90%;
-  display: flex;
-}
-
-.address {
-  width: 50%;
-  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
-.address img {
-  width: 40px;
-  height: auto;
-}
-.address p {
-  font-family: "Tenor Sans", sans-serif;
-  font-size: 11pt;
-  color: #cbb9a8;
-}
-
-.phone {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.phone img {
-  width: 40px;
-  height: auto;
-}
-.phone p {
-  font-family: "Tenor Sans", sans-serif;
-  font-size: 11pt;
-  color: #cbb9a8;
-}
-
-nav {
-  width: 100vw;
-  height: 75px;
-  display: flex;
-}
-nav button {
-  width: 33.3%;
+.nav-sm #dd-menu .dd-item a {
+  width: 100%;
   height: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#active {
+  background: #1a8dbe;
+}
+
+.nav-md-lg {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: #cbb9a8;
-  border: solid 1px #145c9e;
 }
-nav button img {
-  width: 30px;
-  height: auto;
+header div {
+  width: 95%;
 }
-nav button #location-blue {
-  width: 22px;
-  height: auto;
+header div img {
+  width: 300px;
+  height: 100%;
 }
-nav button h4 {
-  margin: 0;
-  margin-top: 6px;
-  font-family: "Tenor Sans", sans-serif;
-  color: #145c9e;
-  font-size: 11pt;
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #29abe2;
 }
-nav #active {
-  background: #ae9278;
+footer p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -554,11 +469,7 @@ nav #active {
 }
 
 @media only screen and (min-width: 36rem) {
-  @import url("https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap");
-  section {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 }
 /* end of media query */
 
