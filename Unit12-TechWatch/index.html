@@ -11,18 +11,8 @@
 
     <nav class="nav-sm">
         <div>
-            <button id="menu" onclick="showMenu()">&#9776;</button>
-            <button id="x" onclick="hideMenu()">&#9932;</button>
+            <a href="#nav-bottom" id="menu">&#9776;</a>
         </div>
-        <ul id="dd-menu">
-            <li class="dd-item"><a href="#">Phones</a></li>
-            <li class="dd-item"><a href="#" id="active">Tablets</a></li>
-            <li class="dd-item"><a href="#">Laptops</a></li>
-            <li class="dd-item"><a href="#">Games</a></li>
-            <li class="dd-item"><a href="#">TVs</a></li>
-            <li class="dd-item"><a href="#">Cameras</a></li>
-            <li class="dd-item"><a href="#">Headsets</a></li>
-        </ul>
     </nav>
 
     <header>
@@ -31,7 +21,7 @@
         </div>
     </header>
 
-    <nav class="nav-md-lg">
+    <nav class="nav-lg">
         <div>
             <a href="#">Phones</a>
             <a href="#" id="active">Tablets</a>
@@ -39,33 +29,90 @@
             <a href="#">Games</a>
             <a href="#">TVs</a>
             <a href="#">Cameras</a>
-            <a href="#">Headsets</a>
+            <a href="#" id="headsets">Headsets</a>
         </div>
     </nav>
 
     <main>
-
+        <section>
+            <nav class="nav-md">
+                <a href="#">Phones</a>
+                <a href="#" id="active">Tablets</a>
+                <a href="#">Laptops</a>
+                <a href="#">Games</a>
+                <a href="#">TVs</a>
+                <a href="#">Cameras</a>
+                <a href="#">Headsets</a>
+            </nav>
+            <div class="main-content">
+                <h1 class="h1">Tablets New to the Market</h1>
+                <h3 class="ipad-h3">Apple iPad</h3>
+                <img src="./images/iPad.png" alt="iPad" class="ipad-img">
+                <p class="ipad-p">
+                    Dance the hempen jig jib bilge rat Cat o'nine tails provost gun weigh anchor reef sails barkadeer line. 
+                    Plate Fleet marooned wench coffer square-rigged dead men tell no tales Admiral of the Black long boat 
+                    trysail bilge water. Coffer Brethren of the Coast overhaul chase guns lass bilge rat bring a spring 
+                    upon her cable draught rigging gally. Man-of-war lad to go on account scurvy Blimey parrel strike colors lee hogshead interloper. 
+                    Nipperkin heave down clap of thunder brigantine hang the jib snow six pounders lugsail holystone 
+                    boom. Cable run a shot across the bow parley Brethren of the Coast Chain Shot warp shrouds 
+                    brig bilge water knave.
+                </p>
+                <h3 class="sony-h3">Sony Tablet</h3>
+                <img src="./images/sonyTablet.png" alt="Sony Tablet" class="sony-img">
+                <p class="sony-p">
+                    Man-of-war lad to go on account scurvy Blimey parrel strike colors lee hogshead interloper. 
+                    Nipperkin heave down clap of thunder brigantine hang the jib snow six pounders lugsail holystone 
+                    boom. Cable run a shot across the bow parley Brethren of the Coast Chain Shot warp shrouds 
+                    brig bilge water knave. Gaff Davy Jones' Locker jack black spot swab league transom chandler fore pressgang. Run a 
+                    shot across the bow splice the main brace black jack scuppers tender six pounders holystone 
+                    dance the hempen jig maroon starboard. Crimp draught red ensign case shot gabion gally 
+                    mutiny crow's nest league run a shot across the bow. 
+                </p>
+                <div class="sony">
+                    <h3 class="sony-h3-lg">Sony Tablet</h3>
+                    <p class="sony-p-lg">
+                        Man-of-war lad to go on account scurvy Blimey parrel strike colors lee hogshead interloper. 
+                        Nipperkin heave down clap of thunder brigantine hang the jib snow six pounders lugsail holystone 
+                        boom. Cable run a shot across the bow parley Brethren of the Coast Chain Shot warp shrouds 
+                        brig bilge water knave. Gaff Davy Jones' Locker jack black spot swab league transom chandler fore pressgang. Run a 
+                        shot across the bow splice the main brace black jack scuppers tender six pounders holystone 
+                        dance the hempen jig maroon starboard. Crimp draught red ensign case shot gabion gally 
+                        mutiny crow's nest league run a shot across the bow. 
+                    </p>
+                </div>
+                <h3 class="surface-h3">Microsoft Surface Pro</h3>
+                <img src="./images/surfacePro.png" alt="Surface Pro" class="surface-img">
+                <p class="surface-p">
+                    Gaff Davy Jones' Locker jack black spot swab league transom chandler fore pressgang. Run a 
+                    shot across the bow splice the main brace black jack scuppers tender six pounders holystone 
+                    dance the hempen jig maroon starboard. Crimp draught red ensign case shot gabion gally 
+                    mutiny crow's nest league run a shot across the bow. Man-of-war lad to go on account scurvy Blimey parrel strike colors lee hogshead interloper. 
+                    Nipperkin heave down clap of thunder brigantine hang the jib snow six pounders lugsail holystone 
+                    boom. Cable run a shot across the bow parley Brethren of the Coast Chain Shot warp shrouds 
+                    brig bilge water knave.
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2019 • Austin Wright • Login</p>
     </footer>
-    
-    <script>
-        const hamburger = document.getElementById("menu");
-        const x = document.getElementById('x');
-        const ddMenu = document.getElementById('dd-menu');
-        function showMenu() {
-            menu.style.display = "none";
-            x.style.display = "initial";
-            ddMenu.style.display = "flex";
-        }
-        function hideMenu() {
-            menu.style.display = "initial";
-            x.style.display = "none";
-            ddMenu.style.display = "none";
-            ddSubMenu.style.display = 'none';
-        }
-    </script>
+
+    <nav id="nav-bottom">
+        <div>
+            <a id="x" href="index.html">&#9932;</a>
+        </div>
+        <ul>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#" id="active">Tablets</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">TVs</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Headsets</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>
